@@ -20,7 +20,7 @@ endef
 
 # Docker run downloader to download bible records.
 define download-bible-records
-		sudo docker run --rm -v $$PWD/music:/data youtube-dl:${GIT_TAG} \
+		sudo docker run --rm -v $$PWD/records:/data youtube-dl:${GIT_TAG} \
     		--abort-on-error \
     		--proxy ${HTTP_PROXY} \
     		-x \
