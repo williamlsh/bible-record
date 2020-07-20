@@ -1,4 +1,4 @@
-GIT_TAG=$(shell git describe --tags --abbrev=0)
+GIT_TAG=$(shell git describe --tags --abbrev=0 | sed -e "s/^v//")
 HTTP_PROXY?=""
 
 .PHONY: build
