@@ -1,6 +1,9 @@
 GIT_TAG=$(shell git describe --tags --abbrev=0 | sed -e "s/^v//")
 HTTP_PROXY?=""
 
+.PHONY: all
+all: build download
+
 .PHONY: build
 build:
 		$(call build-image)
