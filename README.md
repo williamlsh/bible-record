@@ -9,6 +9,12 @@
 
 Collect Holy Bible KJV records into your playlist in one command.
 
+This playlist includes all Bible records in *m4a* audio format and will be in the root folder *records*.
+
+## Prerequisites
+
+* Docker
+
 ## Usage
 
 Clone this repo to local:
