@@ -1,4 +1,4 @@
-GIT_TAG=$(shell git describe --tags --abbrev=0 | sed -e "s/^v//")
+GIT_TAG=$(shell git describe --tags `git rev-list --tags --max-count=1` | sed -e "s/^v//")
 HTTP_PROXY?=""
 
 .PHONY: all
