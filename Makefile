@@ -18,12 +18,12 @@ clean:
 
 # Build docker image for bible records downloader.
 define build-image
-	sudo docker build --build-arg HTTP_PROXY=${HTTP_PROXY} -t youtube-dl:${GIT_TAG} - < Dockerfile
+	docker build --build-arg HTTP_PROXY=${HTTP_PROXY} -t youtube-dl:${GIT_TAG} - < Dockerfile
 endef
 
 # Docker run downloader to download bible records.
 define download-bible-records
-		sudo docker run --rm -v $$PWD/records:/data youtube-dl:${GIT_TAG} \
+		docker run --rm -v $$PWD/records:/data youtube-dl:${GIT_TAG} \
     		--abort-on-error \
     		--proxy ${HTTP_PROXY} \
     		-x \

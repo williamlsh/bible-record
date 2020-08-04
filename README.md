@@ -26,13 +26,13 @@ git clone git@github.com:williamlsh/bible-records.git
 Collect with one command:
 
 ```bash
-make all
+sudo make all
 ```
 
 Possibly with HTTP proxy:
 
 ```bash
-make -e HTTP_PROXY="<YOUR_PROXY>" all
+sudo make -e HTTP_PROXY="<YOUR_PROXY>" all
 ```
 
 ## Author
