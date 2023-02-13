@@ -29,6 +29,6 @@ define download-bible-records
     		-x \
     		-f bestaudio[ext=m4a] \
     		--external-downloader aria2c \
-    		--external-downloader-args '-c -j 10 -x 10 -s 10 -k 1M' \
+    		--external-downloader-args '-c -j 10 -x 10 -s 10' \
     		PLRTwKflrxkQCrP1ZbbKpdP8xoQu2AXT74 | tee log
 endef
